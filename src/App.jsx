@@ -16,7 +16,7 @@ import BackButton from './components/BackButton';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/tourOperator/">
       <div className="flex flex-col min-h-screen">
         <Header />
         <BackButton />
