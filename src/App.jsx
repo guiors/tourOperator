@@ -1,6 +1,6 @@
 // App.jsx
 import React from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Background from './components/Background';
@@ -16,7 +16,7 @@ import BackButton from './components/BackButton';
 
 function App() {
   return (
-    <Router basename="/tourOperator">
+    <Router basename='tourOperator'>
       <div className="flex flex-col min-h-screen">
         <Header />
         <BackButton />
