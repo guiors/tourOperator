@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from "../assets/logo.jpeg";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,11 +13,17 @@ function Header() {
   ];
 
   return (
-    <header className="w-full bg-white">
+    <header className="sticky top-0 z-50 w-full bg-white shadow-md transition-shadow duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between py-2">
           <div className="flex flex-col">
-            <h1 className="text-xl font-bold text-black"> <Link to="/">KADABA ETHIOPIA TOUR</Link></h1>
+            <Link to="/">    
+              <img 
+                src={logo}
+                alt="KADABA ETHIOPIA TOUR" 
+                className="h-14 w-auto object-contain"
+            />
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
