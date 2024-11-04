@@ -1,6 +1,6 @@
 // App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Background from './components/Background';
@@ -16,22 +16,19 @@ import BackButton from './components/BackButton';
 
 function App() {
   return (
-    <Router basename="/tourOperator/">
+    <Router basename="/tourOperator">
       <div className="flex flex-col min-h-screen">
         <Header />
         <BackButton />
         <main className="flex-grow">
           <Routes>
-            <Route 
-              path="/" 
-              element={
-                <div>
-                  <Background />
-                  <WelcomeSection />
-                  <CircuitsPreviewSection />
-                </div>
-              } 
-            />
+            <Route path="/" element={
+              <div>
+                <Background />
+                <WelcomeSection />
+                <CircuitsPreviewSection />
+              </div>
+            } />
             <Route path="/contact" element={<Contact />} />
             <Route path="/circuits"> 
               <Route index element={<Circuits />} />
