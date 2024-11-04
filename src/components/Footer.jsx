@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram } from 'lucide-react';
+import { Instagram, Facebook } from 'lucide-react';
 
 const TikTokIcon = ({ className }) => (
   <svg 
@@ -23,6 +23,16 @@ const Footer = () => {
           
           <div className="flex flex-col sm:flex-row gap-3">
             <a 
+              href="https://www.facebook.com/profile.php?id=100063975974566" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-300"
+            >
+              <Facebook className="w-5 h-5" />
+              <span>Suivez-nous sur Facebook</span>
+            </a>
+            
+            <a 
               href="https://www.instagram.com/voyage_en_ethiopie/" 
               target="_blank" 
               rel="noopener noreferrer"
@@ -33,7 +43,7 @@ const Footer = () => {
             </a>
             
             <a 
-              href="https://www.tiktok.com/@natyo0922" 
+              href="https://www.tiktok.com/@natyo0922?is_from_webapp=1&sender_device=pc" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-300"
