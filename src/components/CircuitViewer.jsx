@@ -33,6 +33,7 @@ const CircuitViewer = ({ circuitName }) => {
               key={tour.id}
               to={`${circuitsPrefix}${tour.link}`}
               className="block transform transition-all hover:scale-[1.02] duration-300"
+              onClick={() => window.scrollTo(0, 0)}
             >
               <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow p-6">
                 <div className="flex justify-between items-start">

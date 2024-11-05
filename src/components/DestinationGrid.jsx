@@ -47,6 +47,7 @@ const allDestinations = [
 const DestinationGrid = ({ onDestinationClick, limit }) => {
   const handleClick = (e, href) => {
     e.preventDefault();
+    window.scrollTo(0, 0);
     if (onDestinationClick) {
       onDestinationClick(href);
     } else {
