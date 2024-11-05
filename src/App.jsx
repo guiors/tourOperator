@@ -1,6 +1,6 @@
 // App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Background from './components/Background';
@@ -16,7 +16,7 @@ import BackButton from './components/BackButton';
 
 function App() {
   return (
-    <Router basename='tourOperator'>
+    <Router >
       <div className="flex flex-col min-h-screen">
         <Header />
         <BackButton />
@@ -37,7 +37,7 @@ function App() {
               <Route path="sud" element={<CircuitViewer circuitName="sud" />} />
               <Route path="ethiopieOrientale" element={<CircuitViewer circuitName="ethiopieOrientale" />} />
               <Route path="nord" element={<CircuitViewer circuitName="nord" />} />
-              <Route path="addis-abeba" element={<CircuitViewer circuitName="addisAbeba" />} />
+              <Route path="addisAbeba" element={<CircuitViewer circuitName="addisAbeba" />} />
               <Route path="randonnee" element={<CircuitViewer circuitName="randonnee" />} />
             </Route>
             <Route path="/about" element={<AboutUs />} />
@@ -52,7 +52,7 @@ function App() {
             <Route path="/circuits/nord/historiqueNord" element={<TourViewer tourName='historiqueNord' />} />
             <Route path="/circuits/randonnee/baleMountainsTrekking9Days" element={<TourViewer tourName='baleMountainsTrekking9Days' />} />
             <Route path="/circuits/randonnee/simienMountainsTrekking8Days" element={<TourViewer tourName='simienMountainsTrekking8Days' />} />
-            <Route path="/circuits/addis-abeba/addisAbebaCityTour1Day" element={<TourViewer tourName='addisAbebaCityTour1Day' />} />
+            <Route path="/circuits/addisAbeba/addisAbebaCityTour1Day" element={<TourViewer tourName='addisAbebaCityTour1Day' />} />
           </Routes>
         </main>
         <Footer />

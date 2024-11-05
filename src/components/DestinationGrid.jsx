@@ -10,37 +10,37 @@ const allDestinations = [
   {
     title: "Sud",
     image: portrait,
-    href: "circuits/sud"
+    href: "#circuits/sud"
   },
   {
     title: "Addis Abeba et ses environs",
     image: addis,
-    href: "circuits/addis-abeba"
+    href: "#circuits/addisAbeba"
   },
   {
     title: "Nord",
     image: lalibela,
-    href: "circuits/nord"
+    href: "#circuits/nord"
   },
   {
     title: "Aventure",
     image: volcano,
-    href: "circuits/aventure"
+    href: "#circuits/aventure"
   },
   {
     title: "Observation des oiseaux",
     image: raven,
-    href: "circuits/oiseaux"
+    href: "#circuits/oiseaux"
   },
   {
     title: "Ethiopie Orientale",
     image: est,
-    href: "circuits/ethiopieOrientale",
+    href: "#circuits/ethiopieOrientale",
   },
   {
     title: "Randonnée",
     image: randonne,
-    href: "circuits/randonnee"
+    href: "#circuits/randonnee"
   }
 ];
 

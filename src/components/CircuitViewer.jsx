@@ -7,7 +7,7 @@ const CircuitViewer = ({ circuitName }) => {
   const circuitInfo = circuitData[circuitName];
   const location = useLocation();
   const circuitsPrefix = location.pathname.includes("/circuits")
-    ? location.pathname.substring(location.pathname.indexOf("/circuits"))
+    ? location.pathname.substring(location.pathname.indexOf("#/circuits"))
     : "";
   if (!circuitInfo) {
     return (
