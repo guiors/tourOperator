@@ -13,6 +13,7 @@ import CircuitViewer from './components/CircuitViewer';
 import AboutUs from './components/AboutUs';
 import Footer from './components/Footer';
 import BackButton from './components/BackButton';
+import Reviews from './components/Reviews';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
                 <Background />
                 <WelcomeSection />
                 <CircuitsPreviewSection />
+                <Reviews />
               </div>
             } />
             <Route path="/contact" element={<Contact />} />
