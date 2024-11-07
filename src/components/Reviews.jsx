@@ -52,7 +52,7 @@ const Reviews = () => {
         Les recommandations de nos clients
       </h1>
 
-      <div className="bg-[#e1c9ab] shadow-lg rounded-lg p-6 text-center relative text-black">
+      <div className="bg-[#FFF9EB] shadow-lg rounded-lg p-6 text-center relative text-black">
         <button
           className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-300 hover:text-gray-100"
           onClick={handlePrev}
